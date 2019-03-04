@@ -1,0 +1,76 @@
+html,body{
+     height: 100%;
+     margin: 0px;
+ }
+.container{
+    background-image: url("bg-con.png");
+    height: 100%;
+
+}
+.content{
+    height: 500px;
+    width: 500px;
+    background-image: url("image.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: local;
+    overflow: scroll;
+}
+p{
+    background-color: #ff0000;
+}
+#animate{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    animation-name: example;
+    animation-delay: 4s;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+@keyframes example {
+    0%{ opacity: 1;}
+    50%{ opacity: 0;}
+    100%{opacity: 0.5;}
+}
+#animate-1{
+    height: 100px;
+    width: 200px;
+    background-color: #ff00ff;
+    border: 1px solid;
+}
+#animate-1:hover{
+    height: 200px;
+    width: 100px;
+    background-color: #000;
+    border: 2px solid #ff00ff;
+    transform: scale(2, 3);
+    transition-duration: 3s;
+}
+footer{
+    height: 100px;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    position: absolute;
+}
+.facebook{
+    height: 160px;
+    width: 200px;
+    background: url('logo.png') -195px -10px;
+}
+.instagram{
+    height: 160px;
+    width: 200px;
+    left: 200px;
+    background: url('logo.png') 0px -10px;
+}
+.twitter{
+    height: 160px;
+    width: 200px;
+    left: 400px;
+    background: url('logo.png') -390px -10px;
+}
